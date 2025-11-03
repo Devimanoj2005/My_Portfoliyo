@@ -1,462 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devi Manoj | B.Tech Student at SJCET Palai</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --primary: #6366f1;
-            --secondary: #4f46e5;
-            --accent: #10b981;
-        }
+<!-- Projects Section -->
+<section id="projects" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">My Projects</h2>
         
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-            background-color: #f9fafb;
-        }
-        
-        .nav-link {
-            position: relative;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -4px;
-            left: 0;
-            background-color: var(--primary);
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
-        }
-        
-        .skill-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        
-        .project-card {
-            transition: transform 0.3s ease;
-        }
-        
-        .project-card:hover {
-            transform: scale(1.02);
-        }
-        
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        .slide-up {
-            animation: slideUp 0.8s ease-out;
-        }
-        
-        @keyframes slideUp {
-            from { 
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to { 
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-</head>
-<body class="text-gray-800">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white shadow-sm z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <span class="text-xl font-bold text-indigo-600">DEVI MANOJ</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Story Generator -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" 
+                         alt="Story generator web app interface" 
+                         class="w-full h-full object-cover hover:scale-105 transition duration-500">
                 </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#about" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600">About</a>
-                        <a href="#skills" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600">Skills</a>
-                        <a href="#projects" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600">Projects</a>
-                        
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Story Generator</h3>
+                    <p class="text-gray-600 mb-4">Interactive web app that generates random stories based on user inputs and themes.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">JavaScript</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">HTML5</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">CSS3</span>
                     </div>
-                </div>
-                <div class="-mr-2 flex md:hidden">
-                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-indigo-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 flex items-center">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
-                    </button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Relationship App -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" 
+                         alt="Relationship app UI concept showing profile and chat features" 
+                         class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Relationship App</h3>
+                    <p class="text-gray-600 mb-4">A mobile-friendly app that helps couples manage relationships through reminders, notes, and shared activities.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">React.js</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">Firebase</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">CSS</span>
+                    </div>
+                    <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 flex items-center">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Expense Tracker App -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331942.png" 
+                         alt="Expense tracker dashboard with pie charts and summary" 
+                         class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Expense Tracker App</h3>
+                    <p class="text-gray-600 mb-4">A simple app to track daily expenses and manage budgets with real-time analytics and charts.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">React</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">Node.js</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">MongoDB</span>
+                    </div>
+                    <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 flex items-center">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Anonymous Drug Counselling System -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920343.png" 
+                         alt="Anonymous counselling chat interface" 
+                         class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Anonymous Drug Counselling System</h3>
+                    <p class="text-gray-600 mb-4">A secure web platform that allows users to seek confidential counselling and guidance for drug addiction recovery.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">HTML</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">CSS</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">PHP</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">MySQL</span>
+                    </div>
+                    <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 flex items-center">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">About</a>
-                <a href="#skills" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Skills</a>
-                <a href="#projects" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Projects</a>
-                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="about" class="hero-section pt-24 pb-16 md:pt-32 md:pb-24">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Hi, I'm <span class="text-indigo-600">Devi Manoj</span></h1>
-                    <h2 class="text-xl md:text-2xl font-semibold text-gray-700 mb-6">B.Tech Student at SJCET Palai</h2>
-                    <p class="text-gray-600 mb-8 max-w-lg">
-                        Passionate about technology and innovation. Currently pursuing my Bachelor's degree in Computer Science with a focus on web development and software engineering.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#projects" class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition duration-300">View Projects</a>
-                       
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center slide-up">
-                    <img src="Devi.jpg" 
-                         alt="Portrait of Devimanoj, a young South Indian male student with glasses in a university campus setting with trees in the background" 
-                         class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-indigo-100 shadow-lg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">My Skills</h2>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- Skill Card 1 -->
-                <div class="skill-card bg-white rounded-lg p-6 shadow-md border border-gray-100">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/73d55b79-d797-496c-8b81-256301a6aa00.png" 
-                             alt="HTML5 logo with blue background" 
-                             class="w-12 h-12 object-contain">
-                    </div>
-                    <h3 class="text-lg font-semibold text-center text-gray-800">HTML5</h3>
-                    <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
-                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 90%"></div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card 2 -->
-                <div class="skill-card bg-white rounded-lg p-6 shadow-md border border-gray-100">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/aa7900d3-1608-4a99-908b-c0ca2c844806.png" 
-                             alt="CSS3 logo with blue background" 
-                             class="w-12 h-12 object-contain">
-                    </div>
-                    <h3 class="text-lg font-semibold text-center text-gray-800">CSS3</h3>
-                    <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
-                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 85%"></div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card 3 -->
-                <div class="skill-card bg-white rounded-lg p-6 shadow-md border border-gray-100">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a3212cac-158e-4485-bb64-f5352c384ab7.png" 
-                             alt="JavaScript logo with golden background" 
-                             class="w-12 h-12 object-contain">
-                    </div>
-                    <h3 class="text-lg font-semibold text-center text-gray-800">JavaScript</h3>
-                    <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
-                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 80%"></div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card 4 -->
-                <div class="skill-card bg-white rounded-lg p-6 shadow-md border border-gray-100">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bacf4cd8-376b-497d-952e-43d80d87d261.png" 
-                             alt="React.js logo with blue background" 
-                             class="w-12 h-12 object-contain">
-                    </div>
-                    <h3 class="text-lg font-semibold text-center text-gray-800">React.js</h3>
-                    <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
-                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 75%"></div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card 5 -->
-                <div class="skill-card bg-white rounded-lg p-6 shadow-md border border-gray-100">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/01032370-99a0-48e5-a5dd-fd031b81fc32.png" 
-                             alt="Node.js logo with green background" 
-                             class="w-12 h-12 object-contain">
-                    </div>
-                    <h3 class="text-lg font-semibold text-center text-gray-800">Node.js</h3>
-                    <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
-                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 70%"></div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card 6 -->
-                <div class="skill-card bg-white rounded-lg p-6 shadow-md border border-gray-100">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c0fe5941-1fea-4c56-b2d8-7317159af6b2.png" 
-                             alt="Python logo with blue and yellow background" 
-                             class="w-12 h-12 object-contain">
-                    </div>
-                    <h3 class="text-lg font-semibold text-center text-gray-800">Python</h3>
-                    <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
-                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 80%"></div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card 7 -->
-                <div class="skill-card bg-white rounded-lg p-6 shadow-md border border-gray-100">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6628da1d-59a3-488d-8777-b8cf2658e3f6.png" 
-                             alt="Java logo with red and black background" 
-                             class="w-12 h-12 object-contain">
-                    </div>
-                    <h3 class="text-lg font-semibold text-center text-gray-800">Java</h3>
-                    <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
-                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 75%"></div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card 8 -->
-                <div class="skill-card bg-white rounded-lg p-6 shadow-md border border-gray-100">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dc3d9f1c-acd2-4421-85b4-5df8bbda0758.png" 
-                             alt="Git logo with orange background" 
-                             class="w-12 h-12 object-contain">
-                    </div>
-                    <h3 class="text-lg font-semibold text-center text-gray-800">Git</h3>
-                    <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
-                        <div class="bg-indigo-600 h-2 rounded-full" style="width: 85%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">My Projects</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4f337c45-0598-4f6c-ba96-4b7f989191f0.png" 
-                             alt="E-commerce website dashboard showing product listings in a grid with filters on the side" 
-                             class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Story Generator</h3>
-                        <p class="text-gray-600 mb-4">Interactive web app that generates random stories based on user inputs and themes.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">JavaScript</span>
-                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">HTML5</span>
-                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">CSS3</span>
-                        </div>
-                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 flex items-center">
-                            View Project
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0c9f16de-0794-4b1d-ae21-7067c67f41d6.png" 
-                             alt="Data visualization dashboard with charts and graphs showing analytics metrics" 
-                             class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Tic Tac Toe Game</h3>
-                        <p class="text-gray-600 mb-4">Classic Tic Tac Toe game with multiplayer functionality and game statistics.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">JavaScript</span>
-                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">CSS</span>
-                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">html</span>
-                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">Game Logic</span>
-                        </div>
-                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 flex items-center">
-                            View Project
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                
-                
-                    </div>
-                    <div class="p-6">
-                        
-                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 flex items-center">
-                            View Project
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Education</h2>
-            
-            <div class="max-w-3xl mx-auto">
-                <div class="relative">
-                    <!-- Education Timeline -->
-                    <div class="border-l-2 border-indigo-200 pl-8 pb-8 space-y-8">
-                        <!-- Education Item 1 -->
-                        <div class="relative">
-                            <div class="absolute -left-11 top-1 w-6 h-6 rounded-full bg-indigo-600 flex items-center justify-center">
-                                <div class="w-3 h-3 bg-white rounded-full"></div>
-                            </div>
-                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                                <h3 class="text-xl font-bold text-gray-800 mb-1">Bachelor of Technology (B.Tech)</h3>
-                                <p class="text-gray-600 mb-2">St. Joseph's College of Engineering and Technology (SJCET), Palai</p>
-                                <p class="text-gray-500">2024 - 2028</p>
-                                <p class="text-gray-600 mt-3">
-                                    Majoring in Computer Science and Engineering with a focus on web technologies and software development.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Education Item 2 -->
-                        <div class="relative">
-                            <div class="absolute -left-11 top-1 w-6 h-6 rounded-full bg-indigo-600 flex items-center justify-center">
-                                <div class="w-3 h-3 bg-white rounded-full"></div>
-                            </div>
-                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                                <h3 class="text-xl font-bold text-gray-800 mb-1">Higher Secondary Education</h3>
-                                <p class="text-gray-600 mb-2">St. Mary's Higher Secondary School, Palai</p>
-                                <p class="text-gray-500">2022 - 2024</p>
-                                <p class="text-gray-600 mt-3">
-                                    Completed 12th grade with Biology Science as main subject, laying foundation for technical education.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-indigo-100 p-2 rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                </div>
-                                <div class="ml-4">
-                                    <p class="text-gray-500 text-sm">Location</p>
-                                    <p class="text-gray-800 font-medium">Palai, Kerala, India</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                       
-                               
-                
-                
-                               
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-                <div class="mb-4 md:mb-0">
-                    <span class="text-xl font-bold text-white">DEVI MANOJ</span>
-                    <p class="mt-2 text-sm">B.Tech Student at SJCET Palai</p>
-                </div>
-                
-                <div class="flex flex-col items-center md:items-end">
-                    <p class="text-sm mb-2">© 2023 Devimanoj. All rights reserved.</p>
-                    <p class="text-xs text-gray-500">Built with HTML, CSS, and JavaScript</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu if open
-                mobileMenu.classList.add('hidden');
-            });
-        });
-        
-        // Animation on scroll
-        const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.skill-card, .project-card');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.2;
-                
-                if(elementPosition < screenPosition) {
-                    element.classList.add('slide-up');
-                }
-            });
-        };
-        
-        window.addEventListener('load', animateOnScroll);
-        window.addEventListener('scroll', animateOnScroll);
-    </script>
-</body>
-</html>
-
+    </div>
+</section>
